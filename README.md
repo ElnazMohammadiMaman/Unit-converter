@@ -1,11 +1,10 @@
-# Unit Converter 🧮
+# Unit Converter
 
-A simple and beginner-friendly unit converter written in Python.
+A simple unit converter written in Python.
 
-This project can convert different measurement units including **length**, **weight**, and **temperature**.
-It was created to practice Python fundamentals such as dictionaries, conditional statements, user input handling, and error handling.
+This project can convert different measurement units including **length**, **weight**, and **temperature**. It was created to practice Python fundamentals and improve the structure of a small Python project.
 
-## Features ✨
+## Features
 
 ### Length Converter
 
@@ -37,10 +36,19 @@ Supported units:
 
 ## Error Handling
 
-The program can handle:
+The program handles:
 
-* Invalid unit inputs
 * Invalid number inputs
+* Invalid unit inputs
+* Invalid menu choices
+
+If an invalid unit is entered, the program asks the user to try again instead of stopping.
+
+## Menu System
+
+The program uses a menu that allows the user to choose which type of conversion they want to perform.
+
+After completing a conversion, the user can return to the main menu and perform another conversion or exit the program.
 
 ## Technologies Used
 
@@ -64,32 +72,34 @@ python unit_converter.py
 
 While building this project, I practiced:
 
+* Functions
 * Variables and data types
 * Dictionaries
 * `if / elif / else` statements
+* `while` loops
 * User input handling
-* Type conversion (`float`)
-* Exception handling (`try / except`)
+* Type conversion using `float`
+* Exception handling using `try / except`
+* `return` and `break`
 * String formatting using f-strings
 * Unit conversion logic
+* Reusing functions to reduce repeated code
 
-## Future Improvements 🚀
+## Project Structure
 
-Planned improvements:
+The project is organized into separate functions for each type of conversion:
 
-* Refactor the code using functions (`def`)
-* Create a menu system to choose converter type
-* Reduce repeated code
-* Add more measurement units:
+* `length_converter()`
+* `weight_converter()`
+* `temperature_converter()`
+* `get_valid_unit()`
 
-  * Inch (in)
-  * Foot (ft)
-  * Mile (mi)
-* Improve user experience
-* Add a graphical user interface (GUI) using Tkinter
+The `get_valid_unit()` function is used to validate unit inputs and reduce repeated code between the different converters.
 
 ## Project Status
 
-🟢 Version 1.0
+Version 2.0
 
-This project is still being improved and new features will be added in future versions.
+The project has been updated from the original basic converter to include functions, a menu system, input validation, error handling, and reusable code.
+
+Created by Elnaz Mohammadi
